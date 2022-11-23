@@ -23,6 +23,11 @@
             About
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'Product' }" class="btn text-success lighten-30 selectable text-uppercase">
+            Product
+          </router-link>
+        </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
       <Login />
