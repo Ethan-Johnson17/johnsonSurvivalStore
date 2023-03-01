@@ -4,9 +4,15 @@
   </header>
   <main>
     <router-view />
+    <Offcanvas id="accountDetailsOffcanvas">
+      <template #Offcanvas-title>Account Details</template>
+      <template #Offcanvas-body>
+        <accountDetails />
+      </template>
+    </Offcanvas>
   </main>
    <footer class="bg-dark text-light">
-    Made with 💖 by CodeWorks
+    Mine
   </footer>
 </template>
 
