@@ -3,7 +3,14 @@
     <h1>Welcome {{ account.name }}</h1>
     <img class="rounded" :src="account.picture" alt="" />
     <p>{{ account.email }}</p>
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#editAccountOffcanvas">Edit Account</button>
   </div>
+  <Offcanvas id="editAccountOffcanvas">
+    <template #offcanvas-title>Edit Account Details</template>
+    <template #offcanvas-body>
+      <EditAccount :account="account"></EditAccount>
+    </template>
+  </Offcanvas>
 </template>
 
 <script>

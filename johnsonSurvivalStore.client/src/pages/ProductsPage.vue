@@ -1,8 +1,11 @@
 <template>
-  <div class="container">
+  <div class="container my-4">
+    <div class="row my-4">
+      <h1>Johnson Survival Store</h1>
+    </div>
     <div class="row">
-      <div class="col-3" v-for="product in products" :key="product.id">
-        <card></card>
+      <div class="col-4" v-for="prod in products" :key="prod.id">
+        <card :product="prod"></card>
       </div>
     </div>
   </div>

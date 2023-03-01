@@ -4,6 +4,12 @@
   </header>
   <main>
     <router-view />
+    <Offcanvas id="accountDetailsOffcanvas">
+      <template #offcanvas-title>Account Details</template>
+      <template #offcanvas-body>
+        <accountDetails />
+      </template>
+    </Offcanvas>
   </main>
    <footer class="bg-dark text-light">
 

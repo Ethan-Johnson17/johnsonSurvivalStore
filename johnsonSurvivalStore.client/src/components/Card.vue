@@ -1,16 +1,23 @@
 <template>
   <div class="card rounded">
     <div class="card-body p-0">
-      <div class="text-container p-2">
-        <h3 class="card-title">Title</h3>
-        <p class="card-text"></p>
+      <div class="text-container p-4">
+        <h3 class="card-title">{{product.productName}}</h3>
+        <p class="card-text">{{product.description}}</p>
+        <button class="btn btn-info" data-bs-toggle="modal" :data-bs-target="'#detailsFor' + product.id">Details</button>
       </div>
       <div class="img-container">
-        <!-- <img class="productImage img-fluid" :src="product.imageUrl" :alt="product.productName"> -->
-        <img src="https://thiscatdoesnotexist.com" alt="Product" class="img-fluid">
+        <img :src="product.imgUrl" :alt="product.productName" class="img-fluid productImage">
       </div>
     </div>
   </div>
+
+  <ProductModal :id="'detailsFor' + product.id" >
+    <template #modal-title>{{ product.productName }}</template>
+    <template #modal-body>
+      <productDetails :product="product" />
+    </template>
+  </ProductModal>
 </template>
 
 <script>
@@ -31,10 +38,14 @@ export default {
 
 <style>
 .productImage {
-  width: 100%;
+  height: 20rem;
 }
 
-.text-container {
-  height: 10rem;
+.card-title {
+  min-height: 5rem;
+}
+
+.card-text {
+  min-height: 5rem;
 }
 </style>
