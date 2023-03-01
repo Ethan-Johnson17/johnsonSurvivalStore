@@ -1,0 +1,8 @@
+<template>
+    <div class="container">
+        <div class="row">
+            <card></card>
+        </div>
+    </div>
+</template>
+
