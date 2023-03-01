@@ -24,8 +24,8 @@
           </router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'Products' }" class="btn text-success lighten-30 selectable text-uppercase">
-            Products
+          <router-link :to="{ name: 'Product' }" class="btn text-success lighten-30 selectable text-uppercase">
+            Product
           </router-link>
         </li>
       </ul>

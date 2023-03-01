@@ -5,14 +5,13 @@
   <main>
     <router-view />
     <Offcanvas id="accountDetailsOffcanvas">
-      <template #Offcanvas-title>Account Details</template>
-      <template #Offcanvas-body>
+      <template #offcanvas-title>Account Details</template>
+      <template #offcanvas-body>
         <accountDetails />
       </template>
     </Offcanvas>
   </main>
    <footer class="bg-dark text-light">
-    Mine
   </footer>
 </template>
 

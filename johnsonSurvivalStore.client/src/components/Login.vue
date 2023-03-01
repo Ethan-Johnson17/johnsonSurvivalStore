@@ -14,11 +14,9 @@
         </div>
         <div class="dropdown-menu dropdown-menu-lg-left p-0" aria-labelledby="authDropdown">
           <div class="list-group">
-            <!-- <router-link :to="{ name: 'Account' }"> -->
-              <div class="list-group-item dropdown-item list-group-item-action selectable" data-bs-toggle="offcanvas" data-bs-target="#accountDetailsOffcanvas" >
-                View Account
-              </div>
-            <!-- </router-link> -->
+            <div class="list-group-item dropdown-item list-group-item-action selectable" data-bs-toggle="offcanvas" data-bs-target="#accountDetailsOffcanvas">
+              View Account
+            </div>
             <div class="list-group-item dropdown-item list-group-item-action text-danger selectable" @click="logout">
               <i class="mdi mdi-logout"></i>
               logout

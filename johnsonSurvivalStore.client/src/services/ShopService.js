@@ -1,12 +1,12 @@
-import { AppState } from"../AppState";
-import { api } from "./AxiosService";
+import { api } from "./AxiosService"
+import { AppState } from "../AppState"
 
 
 class ShopService {
-    async getAllProducts(query='') {
-        const res =  await api.get(query)
-        AppState.products = res.data
-    }
+  async getAllProducts(query = '') {
+    const res = await api.get(query);
+    AppState.products = res.data;
+  }
 }
 
-export const shopService = new ShopService
+export const shopService = new ShopService();
